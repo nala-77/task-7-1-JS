@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task-7-1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./css files/style.css">
+    </head>
+    <body>
+        <main>
+            <section class="first-section container bg">
+                <h2>Getting the Maximim & Minimum Value :</h2>
+                <div class="flex">
+                    <div class="flex">
+                        <label for="first-num">Insert the First Number :</label>
+                        <input type="number" id="first-num" name="firstNum">
+                    </div>
+                    <div class="flex">
+                        <label for="second-num">Insert the Second Number :</label>
+                        <input type="number" id="second-num" name="secondNum">
+                    </div>
+                    <div class="flex">
+                        <label for="third-num">Insert the Third Number :</label>
+                        <input type="number" id="third-num" name="thirdNum">
+                    </div>
+                </div>
+                <button onclick="output()">Output</button>
+            </section>
+            
+            <section class="second-section container">
+                <h2>Checking if the character is Vowel or consonant :</h2>
+                <div>
+                    <div class="flex">
+                        <label for="character">Insert a Character :</label>
+                        <input type="text" maxlength="1" id="character" name="character">
+                    </div>
+                    <button onclick="check()">Output</button>
+                </div>
+            </section>
+
+            <section class="bg container">
+                <h2>multiply Whatever Number u Want :</h2>
+                <div>
+                    <div class="flex">
+                        <label for="num">Insert a Number :</label>
+                        <input type="number" id="num" name="oneNum">
+                    </div>
+                    <button onclick="multiply()">Output</button>
+                </div>
+            </section>
+
+            <section class="container">
+                <h2>Printing all Even Numbers between 1 to this Number :</h2>
+                <div>
+                    <div class="flex">
+                        <label for="num2">Insert a Number :</label>
+                        <input type="number" id="num2" name="secNum">
+                    </div>
+                    <button onclick="even()">Output</button>
+                </div>
+            </section>
+
+            <section class="bg container">
+                <h2>Enter marks of five subjects and add the values to calculate total,
+                    average and percentage :</h2>
+                <div>
+                    <div class="flex">
+                        <label for="mark1">Insert a Number :</label>
+                        <input type="number" id="mark1" name="mark1">
+                    </div>
+                    <div class="flex">
+                        <label for="mark2">Insert a Number :</label>
+                        <input type="number" id="mark2" name="mark2">
+                    </div>
+                    <div class="flex">
+                        <label for="mark3">Insert a Number :</label>
+                        <input type="number" id="mark3" name="mark3">
+                    </div>
+                    <div class="flex">
+                        <label for="mark4">Insert a Number :</label>
+                        <input type="number" id="mark4" name="mark4">
+                    </div>
+                    <div class="flex">
+                        <label for="mark5">Insert a Number :</label>
+                        <input type="number" id="mark5" name="mark5">
+                    </div>
+                   <div>
+                    <button onclick="addValues()" class="add-btn">Add Values</button>
+                   </div>
+                    <button onclick="console.log(getTotal())" >Total</button>
+                    <button onclick="getAverage()" >Average</button>
+                    <button onclick="getPercentage ()">Percentage</button>
+                    
+                </div>
+            </section>
+            
+            <section class="container">
+                <h2>Insert marks of five subjects Physics, Chemistry,
+                    Biology, Mathematics and Computer to find percentage and grade</h2>
+                    <div class=" search-input flex">
+                        <label for="search">Search</label>
+                        <input onkeyup="search(this.value)" type="text" id="search" name="search" placeholder="search student name">
+                    </div>
+                    <div class="flex">
+                        <label for="student">student name</label>
+                        <input type="text" id="student" name="student">
+                    </div>
+                <div class="flex">
+                    <label for="physics">Physics :</label>
+                    <input type="number" id="physics-mark" name="physics">
+                </div>
+
+                <div class="flex">
+                    <label for="chemistry">Chemistry :</label>
+                    <input type="number" id="chemistry-mark" name="chemistry">
+                </div>
+
+                <div class="flex">
+                    <label for="biology">Biology :</label>
+                    <input type="number" id="biology-mark" name="biology">
+                </div>
+
+                <div class="flex">
+                    <label for="mathematics">Mathematics :</label>
+                    <input type="number" id="mathematics-mark" name="mathematics">
+                </div>
+
+                <div class="flex">
+                    <label for="computer">Computer :</label>
+                    <input type="number" id="computer-mark" name="computer">
+                </div>
+                <div>
+                    <button class="add-btn add">Add Row</button>
+                </div>
+                <div class="table">
+                    <table class="grand-parent">
+                        <thead>
+                            <tr>
+                                <th>#id</th>
+                                <th>Student</th>
+                                <th>Physics</th>
+                                <th>Chemistry</th>
+                                <th>Biology</th>
+                                <th>Mathematics</th>
+                                <th>Computer</th>
+                                <th>Action</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </div>
+                
+            </section>
+
+        </main>
+        <script src="./js files/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Comfortaa;
+}
+:root {
+  --ligh-gray: #e6e3f0;
+}
+.flex {
+  display: flex;
+}
+.container {
+  padding: 80px 150px;
+}
+.bg {
+  background-color: var(--ligh-gray);
+}
+section {
+  min-height: 50vh;
+}
+section h2 {
+  color: #5d277c;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.first-section {
+  display: flex;
+  flex-direction: column;
+}
+.first-section div {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section div.flex {
+  flex-direction: column;
+  width: 300px;
+}
+section div label {
+  color: #151540;
+}
+section div input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  outline: 0;
+  border: 2px solid #151540;
+}
+.search-input {
+  width: 80% !important;
+  text-align: center;
+  margin: 30px auto;
+}
+section div input:hover,
+section div input:focus {
+  border: 0;
+  box-shadow: 0 0 7px 0 #8a8ae0;
+}
+section button {
+  width: 200px;
+  margin-top: 15px;
+  background-color: #8a8ae0;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.add-btn {
+  background-color: #94c88b;
+  width: auto;
+}
+.table {
+  display: flex;
+  align-items: center;
+  width: 96%;
+}
+thead {
+  background-color: #ccc2eb;
+  color: #424242;
+}
+section table {
+  color: #38598b;
+  border: 1px solid rgb(185, 185, 185);
+  border-collapse: collapse;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bolder;
+  width: 100%;
+}
+table th,
+td {
+  padding: 15px 0;
+}
+.btn-percentage {
+  background-color: #54548c;
+}
+
+/* small screen */
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding: 50px;
+  }
+  table,
+  th,
+  td {
+    font-size: 12px;
+  }
+  .btn-percentage {
+    width: auto;
+    font-size: 12px;
+  }
+}
+
+/* mobile screen */
+@media (min-width: 200px) and (max-width: 576px) {
+  .container {
+    padding: 80px 10px;
+  }
+  section h2 {
+    font-size: 18px;
+  }
+  section div input {
+    padding: 10px 5px;
+    width: 230px;
+  }
+  table,
+  th,
+  td {
+    padding: 15px 2px !important;
+    font-size: 9px;
+    font-weight: 900;
+  }
+  .btn-percentage {
+    width: auto;
+    font-size: 8px;
+  }
+}
